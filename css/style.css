@@ -1,0 +1,84 @@
+body{
+	width: 100vh;
+	height: 100vh;
+	border: 1px solid;
+}
+
+.board{
+	position: relative;
+	max-width: 100%;
+	min-height: 100%;
+	background-color: black;
+	margin: auto;
+
+}
+
+[class*=cell]{
+	position: absolute;
+	height: 100%;
+	width: 12.5%;
+}
+
+[class*=row]{
+	position: absolute;
+	height: 12.5%;
+	width: 100%;
+}
+
+.row2{
+	top: 12.5%;
+}
+.row3{
+	top: 25%;
+}
+.row4{
+	top: 37.5%;
+}
+.row5{
+	top: 50%;
+}
+.row6{
+	top: 62.5%;
+}
+.row7{
+	top: 75%;
+}
+.row8{
+	top: 87.5%;
+}
+
+.cell2{
+	left: 12.5%;
+}
+.cell3{
+	left: 25%;
+}
+.cell4{
+	left: 37.5%;
+}
+.cell5{
+	left: 50%;
+}
+.cell6{
+	left: 62.5%;
+}
+.cell7{
+	left: 75%;
+}
+.cell8{
+	left: 87.5%;
+}
+
+[class*=row]:nth-child(odd) [class*=cell]:nth-child(odd){
+	background-color: #FFF;
+}
+
+[class*=row]:nth-child(odd) [class*=cell]:nth-child(even){
+	background-color: black;
+}
+
+[class*=row]:nth-child(even) [class*=cell]:nth-child(even){
+	background-color: #FFF;
+}
+/* [class*=row]:nth-child(odd) [class*=cell]:nth-child(even){
+	background-color: black;} */
